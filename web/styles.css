@@ -1,0 +1,123 @@
+/* Body and General Layout */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+    color: #333;
+}
+
+.main-container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Title Styling */
+.page-title {
+    font-family: 'Birthstone', serif;
+    font-size: 4rem;
+    color: #333;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 1.5s ease-out;
+    padding: 20px 0;
+}
+
+/* Animation for the Title */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Search Container Styling */
+.search-container {
+    margin-top: 30px;
+}
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #84fab0;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #8fd3f4;
+}
+
+button {
+    background-color: #84fab0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8fd3f4;
+}
+
+/* Results Sections */
+.results-section {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Birthstone', serif; /* Applying Birthstone font to entire section */
+}
+
+.results-section h2 {
+    font-family: 'Birthstone', serif; /* Title text will use Birthstone */
+    font-size: 2.2rem; /* Adjust font size */
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-align: center; /* Center-align titles */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for better visibility */
+}
+
+.results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.results-list a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Birthstone', serif; /* Applying Birthstone font to links */
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.results-list a:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px); /* Adding a slight hover animation */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow effect on hover */
+}

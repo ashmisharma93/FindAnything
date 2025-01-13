@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Anything</title>
+    
+        <!-- Preconnect to Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <!-- Link to Birthstone font -->
+        <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div class="main-container">
+        <h1 class="page-title">Find Anything</h1>
+        <div class="search-container">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Type your query here..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        
+        <!-- Section for Instagram Results -->
+        <div class="results-section" id="instagram-results">
+            <h2>Instagram Reels</h2>
+            <div class="results-list" id="instagram-links"></div>
+        </div>
+        
+        <!-- Section for YouTube Results -->
+        <div class="results-section" id="youtube-results">
+            <h2>YouTube Videos</h2>
+            <div class="results-list" id="youtube-links"></div>
+        </div>
+        
+        <!-- Section for Tweets -->
+        <div class="results-section" id="tweets-results">
+            <h2>Tweets</h2>
+            <div class="results-list" id="tweets-links"></div>
+        </div>
+        
+        <!-- Section for Webpages -->
+        <div class="results-section" id="web-results">
+            <h2>Relevant Webpages</h2>
+            <div class="results-list" id="web-links"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
