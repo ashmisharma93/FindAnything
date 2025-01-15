@@ -4,7 +4,7 @@ from exa_py import Exa
 # Initialize Flask app
 app = Flask(__name__, static_folder='web', static_url_path='')
 
-exa = Exa('2fb28497-10f9-413a-b263-9ac04ffa085f')
+exa = Exa('2fb****************************')   # Your Exa API key
 
 @app.route('/')
 def index():
