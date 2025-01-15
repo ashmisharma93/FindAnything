@@ -50,3 +50,11 @@ Key functionalities:
  - Sends the search query from the front end to the backend (main.py) via an API call.
  - Processes and updates the categorized results dynamically without refreshing the page.
  - Handles errors gracefully to improve user experience.
+
+
+
+# HOW TO GET EXA API KEY?
+- To obtain the key, go to https://dashboard.exa.ai/playground.
+- After creating an Exa account, your dashboard will be displayed.
+- When you select API Keys from the left panel, a window containing your private API key will open.
+- Paste the key into your backend file's code after copying it.
